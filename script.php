@@ -19,4 +19,25 @@ if ($açao == "criar")
     }
 }
 
+if ($açao == "buscar")
+{ 
+    echo"<script>alert('buscando'); history.back()</script>";
+}
+
+if ($açao == "atualizando")
+{ 
+    echo"<script>alert('atualizado'); history.back()</script>";
+}
+
+if ($açao == "deletar")
+{ 
+    $sql = "delete database $database";
+    if($connecta->query($sql) == true){
+
+        echo"<script>alert('deletando banco'); history.back()</script>";
+
+    }
+  
+ 
+}
 ?>
